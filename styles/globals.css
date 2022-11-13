@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+.inclusion ol,
+.inclusion ul {
+  list-style: number;
+}
+
+.bg-image {
+  background-image: url("/images/home-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.last-border-none:last-child {
+  border: 0px;
+}
+
+.pp-container {
+  @apply px-8 max-w-[1536px] mx-auto;
+}
+
+.pp-link-wrapper:first-of-type {
+  @apply md:col-span-2 lg:col-span-1;
+}
+
+.filter-search {
+  position: relative;
+}
+.filter-search select {
+  position: relative;
+}
+
+.filter-search select::-ms-expand {
+  display: none;
+}
+
+.filter-search select option:not(first-child) {
+  color: black;
+}
+
+.pp-shadow {
+  box-shadow: 0px 0px 12px #00000029;
+}
+
+.internal-header-bg {
+  background-image: url("/images/listing-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.internal-header-overlay {
+  background: linear-gradient(180deg, #ffffff00 0%, rgba(0, 0, 0, 0.3) 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.filter-checkbox:checked + .filter-label {
+  background-color: #642ca9;
+  color: white;
+}
+
+.rc-rate-star {
+  margin-right: 0px !important;
+}
+
+.custom-arrows {
+  height: 100% !important;
+  border-radius: 0 !important;
+  width: 90px !important;
+  filter: invert(1) !important;
+  opacity: 0.5 !important;
+}
+
+.custom-prev-arrow {
+  left: 0 !important;
+}
+
+.custom-next-arrow {
+  right: 0 !important;
+}
+.pp-form-container {
+  max-width: 1350px;
+  @apply mx-auto py-11 px-6 md:px-8 lg:px-16 xl:px-24 2xl:px-[120px] bg-white rounded-2xl;
+}
+
+.form-input {
+  @apply rounded-2xl px-4 py-3 md:py-5 md:px-6 text-sm md:text-base lg:text-lg;
+}
+
+@media (max-width: 767px) {
+  .custom-arrows {
+    width: 45px !important;
+  }
+}
+.job-content h2,
+.job-content h1,
+.job-content h3,
+.job-content h4,
+.job-content h5,
+.job-content h6,
+.job-content strong {
+  @apply text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold mb-2;
+}
+.job-content p {
+  @apply text-sm md:text-base mb-4;
+}
+.job-content ul li {
+  @apply mb-2 text-sm md:text-base;
+}
+.job-content ul {
+  list-style: disc;
+}
+
+.react-select__control {
+  @apply p-2 md:p-[14px] border-0 rounded-[1rem] !important;
+}
+
+.state-select__control {
+  @apply p-2 md:p-[16px] border rounded-[1rem] !important;
+}
